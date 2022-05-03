@@ -30,19 +30,58 @@ color:black
 {
 
     background: white;
-    padding: 20px ;
+    padding: 10px ;
     border-radius: 4px;
 }
 
 .contenedor .header
 {
 
-    background: rgb(5, 59, 101);
-    color: white;
+    background: rgb(248, 248, 248);
+    color: black;
     grid-column-start: 1;
     grid-column-end: 4;
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-size: 80%;
+text-align: center;
 
 }
+
+.contenedor .botones {
+    
+    padding: 10px; /*espacio alrededor texto*/
+    color: black; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+    font-size: small;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: end ;
+   
+    }
+
+   /* a.botones{
+        text-decoration: none;
+       }
+       a.botones:hover{
+        text-decoration: underline;
+        transition: all 0.05s ease-in;
+       }
+*/
+
+
+       a.botones{
+        text-decoration: underline transparent;
+        transition: 0.5s ease-in;
+        color: #000000;
+       }
+       a.botones:hover{
+        text-decoration: underline;
+       }
 
 .contenedor .contenido {
 
