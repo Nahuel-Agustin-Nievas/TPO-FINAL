@@ -48,6 +48,11 @@ text-align: center;
 
 }
 
+.img .img_header{
+
+    max-width: 20px;
+}
+
 .contenedor .botones {
     
     padding: 10px; /*espacio alrededor texto*/
@@ -85,7 +90,8 @@ font-family: 'Lato', sans-serif;
 
 .contenedor .contenido {
 
-    grid-column: span 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .contenedor .sidebar {
