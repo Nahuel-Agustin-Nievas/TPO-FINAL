@@ -197,13 +197,13 @@ a.boton2:hover {
 
 .frase1 {
   position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; 
+  display: block;
+  cursor: pointer;  
 
 }
 
 
-.frase1 .tooltiptext {
+.frase1 .frase1_pop {
   visibility: hidden;
   font-size: 1rem;
   width: 120px;
@@ -212,8 +212,8 @@ a.boton2:hover {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-  top: -5px;
-  left: 105%;
+  top: -19px;
+  left: 95%;
  
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -221,11 +221,11 @@ a.boton2:hover {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.frase1:hover .tooltiptext {
+.frase1:hover .frase1_pop {
   visibility: visible;
 }
 
-.frase1 .tooltiptext::after {
+.frase1 .frase1_pop::after {
   content: " ";
   position: absolute;
   top: 50%;
@@ -235,6 +235,95 @@ a.boton2:hover {
   border-style: solid;
   border-color: transparent black transparent transparent;
 }
+
+.frase2 {
+  position: relative;
+  display: block;
+  cursor: pointer;  
+
+}
+
+
+.frase2 .frase2_pop {
+  visibility: hidden;
+  font-size: 1rem;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  top: -25px;
+  left: 104%;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.frase2:hover .frase2_pop {
+  visibility: visible;
+}
+
+.frase2 .frase2_pop::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+
+
+.frase3 {
+  position: relative;
+  display: block;
+  cursor: pointer;  
+
+}
+
+
+.frase3 .frase3_pop {
+  visibility: hidden;
+  font-size: 1rem;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  top: 10px;
+  left: 95%;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.frase3:hover .frase3_pop {
+  visibility: visible;
+}
+
+.frase3 .frase3_pop::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+
+
+
+
 /*css para pestaña contacto*/
 
 /*css extraido desde el bootstrap para el formulario */
@@ -263,6 +352,15 @@ textarea.form-control{min-height:calc(1.5em + .75rem + 2px);}
 
 
 @media screen and (max-width: 768px) {
+
+
+
+  .mainText, .mainText_nosotros{
+    font-size: 1.5rem;
+    margin-left:10px;
+}
+
+
   .contendor .contenido {
     grid-column: 1 / -1;
   }
@@ -270,10 +368,42 @@ textarea.form-control{min-height:calc(1.5em + .75rem + 2px);}
   .contenedor .ventana-1,  .contenedor .ventana-2 {
     grid-column: span 2;
   }
-  .mainText, .mainText_nosotros{
-      font-size: 1.5rem;
-      margin-left:10px;
-  }
+ 
 }
 
 
+.frase1 .frase1_pop {
+  visibility: hidden;
+  font-size: 1rem;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  top: -19px;
+  left: 95%;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+  .mainText, .mainText_nosotros{
+    font-size: 1rem;
+    margin-left:10px;
+}
+
+
+ .mainText_nosotros .frase1 .frase1_pop, .mainText_nosotros .frase2 .frase2_pop, .mainText_nosotros .frase3 .frase3_pop  {
+  font-size: 0.5rem;
+  margin-left:10px;
+ 
+
+}}
