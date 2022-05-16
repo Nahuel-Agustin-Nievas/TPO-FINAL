@@ -42,17 +42,19 @@
       </div>
     </header>
 
-    <main class="contenido">
-      <div class="form_pro">
+  
+
+      
+      <!-- <div class="form_pro">
        
-        <div class="mb-3">
+        <div class="mb">
             <label for="exampleFormControlInput1" class="form-label">Nombre</label>
             <input type="Nombre" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
           </div>
 
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="Nombre" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="Nombre" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
           </div>
 
           <div class="mb-3">
@@ -60,12 +62,79 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
 
+          <tr>
+            <td colspan="2" align="center"><input type="button" value="Enviar" onclick="valida_envia()"></td>
+        </tr>
 
 
         
-      </div>
-    </main>
+      </div> -->
 
+
+      <main class="contenido">
+
+      <form class="form_pro" id="form_pro">
+    
+        <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                  <input type="Nombre" class="form-control" id="nombre" placeholder="Nombre">
+                </div>
+      
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email</label>
+                  <input type="Nombre" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+      
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                  <textarea class="form-control" id="comentario" rows="3"></textarea>
+                </div>
+      
+                <tr>
+                  <td colspan="2" ><input type="submit" value="Enviar" ></td>
+              </tr>
+    
+            </form>
+    
+    <script>
+    
+    
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("form_pro").addEventListener('submit', validarFormulario); 
+    });
+    
+    
+    function validarFormulario(evento) {
+      evento.preventDefault();
+      var nombre = document.getElementById('nombre').value;
+      if(nombre.length == 0) {
+        alert('Por favor complete el campo "Nombre"');
+        return;
+      }
+    
+      var email = document.getElementById('email').value;
+      if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+        alert('Debe dejar un mail válido');
+        return;
+      }
+    
+    
+      var comentario = document.getElementById('comentario').value;
+      if (comentario.length < 6) {
+        alert('Debe dejar un comentario');
+        return;
+      }
+    
+      
+      this.submit();
+    
+      alert ('Gracias por su comentario')
+    }
+    
+    
+    </script>
+
+</main>
  
     <footer class="footer">
       
