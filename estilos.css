@@ -314,6 +314,8 @@ text-decoration: none;
 }
 
 
+/*css para pestaña adopciones*/
+
 
 
 
@@ -372,8 +374,8 @@ textarea.form-control{min-height:calc(1.5em + .75rem + 2px);}
 
   .frase1 .frase1_pop {
  
-    top: -30px;
-    left: 10%;
+    top: -35px;
+    left: 100%;
   
   }
   
@@ -479,7 +481,6 @@ textarea.form-control{min-height:calc(1.5em + .75rem + 2px);}
   
   
   
-  
   .frase3 .frase3_pop {
    
     top: 0px;
@@ -487,13 +488,40 @@ textarea.form-control{min-height:calc(1.5em + .75rem + 2px);}
   
   }
 
-
-
-
-
-
-
-
-
+  
 
 }
+
+
+
+
+
+
+.contenedor .imagen_adopciones_left:hover .mainimg_left, .contenedor .imagen_adopciones_right:hover .mainimg_right {transition:all .5s ease-in-out;-webkit-transform:scale(1.1);transform:scale(1.1);}
+.contenedor .imagen_adopciones_left .mainimg_left, .contenedor .imagen_adopciones_right .mainimg_right {transition:all .5s ease-in-out; overflow:hidden;}
+
+
+.contenedor .imagen_adopciones_left .mainimg_left, .contenedor .imagen_adopciones_right .mainimg_right{
+
+  border-radius: 10px;
+  background-color:rgb(248, 248, 248);
+  
+}
+
+
+
+
+
+.imagen_adopciones_left, .imagen_adopciones_right  {
+  text-align:center;
+  background-color:rgb(248, 248, 248);
+  
+
+}
+
+
+  
+  .list{
+  text-align: left;
+  display:inline-block;
+  }
