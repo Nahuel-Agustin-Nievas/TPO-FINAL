@@ -444,8 +444,13 @@ textarea.form-control{min-height:calc(1.5em + .75rem + 2px);}
 
 .contenedor .ventana-1,  .contenedor .ventana-2 {
   grid-column: span 3;
+
+
+
+  
  
 }
+
 
 
 
@@ -489,6 +494,18 @@ textarea.form-control{min-height:calc(1.5em + .75rem + 2px);}
   }
 
   
+
+  ul {
+    font-size: 0.75rem;
+  }
+  
+  li {
+    line-height: 0.75rem;
+  }
+
+
+
+
 
 }
 
