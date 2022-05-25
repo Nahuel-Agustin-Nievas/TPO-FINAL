@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lato&display=swap"
       rel="stylesheet"
     />
-    
+
     <script
       src="https://kit.fontawesome.com/ff60de20f6.js"
       crossorigin="anonymous"
@@ -21,82 +21,80 @@
     />
     <link rel="stylesheet" href="estilos.css" />
 
-  <script src="contacto.js"></script>
-  <link rel="icon" href="imagenes/cat-face-vectorized.ico">
+    <script src="contacto.js"></script>
+    <link rel="icon" href="imagenes/cat-face-vectorized.ico" />
     <title>Nosotros</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header class="header">
+        <img
+          class="img_headear"
+          src="imagenes/cat-face-vectorized.svg"
+          alt="Logo progat"
+          width="80px"
+        />
 
-</head>
-<body>
-  <div class="contenedor">
-    <header class="header">
-      <img
-        class="img_headear"
-        src="imagenes/cat-face-vectorized.svg"
-        alt="Logo progat"
-        width="80px"
-      />
+        <h2>Progat Cataluña</h2>
+        <div class="botones">
+          <a class="botones" href="index.html">Home</a>
+          <a class="botones" href="nosotros.html">Qué hacemos</a>
+          <a class="botones" href="adopciones.html">Adopciones</a>
+          <a class="botones" href="contacto.html">Contacto</a>
+        </div>
+      </header>
 
-      <h2>Progat Cataluña</h2>
-      <div class="botones">
-        <a class="botones" href="index.html">Home</a>
-        <a class="botones" href="nosotros.html">Qué hacemos</a>
-        <a class="botones" href="adopciones.html">Adopciones</a>
-        <a class="botones" href="contacto.html">Contacto</a>
-      </div>
-    </header>
-
-
-    
       <main class="contenido">
+        <form class="form_pro" id="form_pro">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Nombre</label
+            >
+            <input
+              type="Nombre"
+              class="form-control"
+              id="nombre"
+              placeholder="Nombre"
+            />
+          </div>
 
-      <form class="form_pro" id="form_pro">
-    
-        <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                  <input type="Nombre" class="form-control" id="nombre" placeholder="Nombre">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Email</label>
-                  <input type="Nombre" class="form-control" id="email" placeholder="name@example.com">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-                  <textarea class="form-control" id="comentario" rows="3"></textarea>
-                </div>
-      
-                <tr>
-                  <td colspan="2" ><input type="submit" value="Enviar" ></td>
-              </tr>
-    
-            </form>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email</label
+            >
+            <input
+              type="Nombre"
+              class="form-control"
+              id="email"
+              placeholder="name@example.com"
+            />
+          </div>
 
-</main>
- 
-    <footer class="footer">
-      
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Comentario</label
+            >
+            <textarea class="form-control" id="comentario" rows="3"></textarea>
+          </div>
 
-      <p>Created by Nahuel Nievas. © 2022</p>
-      <p>Progat Cataluña</p>
+          <tr>
+            <td colspan="2"><input type="submit" value="Enviar" /></td>
+          </tr>
+        </form>
+      </main>
 
-     <a href="https://www.facebook.com/ProgatCatalunya/">
-        <i class="fa-brands fa-facebook-f fa-lg fa-beat"></i>
+      <footer class="footer">
+        <p>Created by Nahuel Nievas. © 2022</p>
+        <p>Progat Cataluña</p>
 
+        <a href="https://www.facebook.com/ProgatCatalunya/" target="_blank">
+          <i class="fa-brands fa-facebook-f fa-lg fa-beat"></i>
+        </a>
 
-
-      </a>
-
-      <a href="https://www.instagram.com/progatcatalunya/">
-        <i class="fa-brands fa-instagram fa-lg fa-beat"></i>
-
-      </a>
-
-
-
-    </footer>
-  </div>
-
-
-</body>
+        <a href="https://www.instagram.com/progatcatalunya/" target="_blank">
+          <i class="fa-brands fa-instagram fa-lg fa-beat"></i>
+        </a>
+      </footer>
+    </div>
+  </body>
 </html>
