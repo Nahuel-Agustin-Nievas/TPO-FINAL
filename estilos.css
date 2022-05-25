@@ -182,7 +182,6 @@ a.boton2:hover {
   top: -19px;
   left: 95%;
 
-  /* Position the tooltip text */
   position: absolute;
   z-index: 1;
 }
